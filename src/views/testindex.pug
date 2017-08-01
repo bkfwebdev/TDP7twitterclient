@@ -32,7 +32,7 @@ html(lang='en')
                 c-6.1-0.2-11.7-1.8-16.7-4.6c0,0.2,0,0.3,0,0.5C7.2,69.7,20,84.6,36.9,88c-3.1,0.8-6.4,1.3-9.7,1.3c-2.4,0-4.7-0.2-6.9-0.7\
                 c4.7,14.6,18.3,25.3,34.5,25.6C42,124.1,26.1,130,8.8,130c-3,0-5.9-0.2-8.8-0.5C16.3,139.9,35.8,146,56.6,146\
                 c67.9,0,105.1-56.2,105.1-104.9c0-1.6,0-3.2-0.1-4.8C168.8,31.2,175,24.7,180,17.3z')
-              h1 @grattspore
+              h1 @#{myUserName}
           .circle--fluid--cell.align-right
             nav
               ul.circle--inline
@@ -66,11 +66,11 @@ html(lang='en')
             li
               strong.app--tweet--timestamp 4h
               a.app--tweet--author
-                .app--avatar(style='background-image: url(images/f-spore.png)')
+                .app--avatar(style = myAvatarImage)
                   img(src='https://pbs.twimg.com/profile_images/856254755760373765/7HCLCibc_400x400.jpg')
-                h4 Jill Spore
-                |  @jillspore
-              p #{myContent.myTweets[0]}
+                h4 #{myRealName}
+                |  @#{myUserName}
+              p #{myTweets[0]}
               ul.app--tweet--actions.circle--list--inline
                 li
                   a.app--reply
@@ -100,11 +100,11 @@ html(lang='en')
             li
               strong.app--tweet--timestamp 4h
               a.app--tweet--author
-                .app--avatar(style = myStyleString )
+                .app--avatar(style = myAvatarImage )
                   img(src='images/f-spore.png')
-                h4 Jill Spore
-                |  @jillspore
-              p #{myContent.myTweets[1]}
+                h4 #{myRealName}
+                |  @#{myUserName}
+              p #{myTweets[1]}
               ul.app--tweet--actions.circle--list--inline
                 li
                   a.app--reply
@@ -134,11 +134,11 @@ html(lang='en')
             li
               strong.app--tweet--timestamp 4h
               a.app--tweet--author
-                .app--avatar(style='background-image: url(images/f-spore.png)')
+                .app--avatar(style= myAvatarImage)
                   img(src='images/f-spore.png')
-                h4 Jill Spore
-                |  @jillspore
-              p #{myContent.myTweets[2]}
+                h4 #{myRealName}
+                |  @#{muUserName}
+              p #{myTweets[2]}
               ul.app--tweet--actions.circle--list--inline
                 li
                   a.app--reply
@@ -168,11 +168,11 @@ html(lang='en')
             li
               strong.app--tweet--timestamp 4h
               a.app--tweet--author
-                .app--avatar(style='background-image: url(images/f-spore.png)')
+                .app--avatar(style= myAvatarImage)
                   img(src='images/f-spore.png')
-                h4 Jill Spore
-                |  @jillspore
-              p #{myContent.myTweets[3]}
+                h4 #{myRealName}
+                |  @#{myUserName}
+              p #{myTweets[3]}
               ul.app--tweet--actions.circle--list--inline
                 li
                   a.app--reply
@@ -202,11 +202,11 @@ html(lang='en')
             li
               strong.app--tweet--timestamp 4h
               a.app--tweet--author
-                .app--avatar(style='background-image: url(images/f-spore.png)')
+                .app--avatar(style= myAvatarImage)
                   img(src='images/f-spore.png')
-                h4 Jill Spore
-                |  @jillspore
-              p #{myContent.myTweets[4]}
+                h4 #{myRealName}
+                |  @#{myUserName}
+              p #{myTweets[4]}
               ul.app--tweet--actions.circle--list--inline
                 li
                   a.app--reply
@@ -240,50 +240,50 @@ html(lang='en')
               .circle--fluid
                 .circle--fluid--cell.circle--fluid--primary
                   a.app--tweet--author
-                    .app--avatar(style='background-image: url(images/f-spore.png)')
+                    .app--avatar(style = myFollowersAvatar[0])
                       img(src='images/f-spore.png')
-                    h4 Jill Spore
-                    p @jillspore
+                    h4 #{myFollowersRealName[0]}
+                    p @#{myFollowersUserName[0]}
                 .circle--fluid--cell
                   a.button.button-text Unfollow
             li
               .circle--fluid
                 .circle--fluid--cell.circle--fluid--primary
                   a.app--tweet--author
-                    .app--avatar(style='background-image: url(images/f-spore.png)')
+                    .app--avatar(style= myFollowersAvatar[1])
                       img(src='images/f-spore.png')
-                    h4 Jill Spore
-                    p @jillspore
+                    h4 #{myFollowersRealName[1]}
+                    p @#{myFollowersUserName[1]}
                 .circle--fluid--cell
                   a.button.button-text Unfollow
             li
               .circle--fluid
                 .circle--fluid--cell.circle--fluid--primary
                   a.app--tweet--author
-                    .app--avatar(style='background-image: url(images/f-spore.png)')
+                    .app--avatar(style= myFollowersAvatar[2])
                       img(src='images/f-spore.png')
-                    h4 Jill Spore
-                    p @jillspore
+                    h4 #{myFollowersRealName[2]}
+                    p @#{myFollowersUserName[2]}
                 .circle--fluid--cell
                   a.button.button-text Unfollow
             li
               .circle--fluid
                 .circle--fluid--cell.circle--fluid--primary
                   a.app--tweet--author
-                    .app--avatar(style='background-image: url(images/f-spore.png)')
+                    .app--avatar(style= myFollowersAvatar[3])
                       img(src='images/f-spore.png')
-                    h4 Jill Spore
-                    p @jillspore
+                    h4 #{myFollowersRealName[3]}
+                    p @#{myFollowersUserName[3]}
                 .circle--fluid--cell
-                  a.button Follow
+                  a.button.button-text Unfollow
             li
               .circle--fluid
                 .circle--fluid--cell.circle--fluid--primary
                   a.app--tweet--author
-                    .app--avatar(style='background-image: url(images/f-spore.png)')
+                    .app--avatar(style= myFollowersAvatar[4])
                       img(src='images/f-spore.png')
-                    h4 Jill Spore
-                    p @jillspore
+                    h4 #{myFollowersRealName[4]}
+                    p @#{myFollowersUserName[4]}
                 .circle--fluid--cell
                   a.button.button-text Unfollow
       .grid-33
@@ -292,31 +292,31 @@ html(lang='en')
             li
               h3
                 | Conversation with 
-                a Jill Spore
+                a #{myRealName}
               ul.app--message--conversation
-                li.app--message
-                  .app--avatar(style='background-image: url(images/f-spore.png)')
+                li(class = myMessageClass[0])
+                  .app--avatar(style=sendersImage[0])
                     img(src='images/f-spore.png')
-                  p.app--message--text How are things?
+                  p.app--message--text #{myMessages[0]}
                   p.app--message--timestamp 3 hours ago
-                li.app--message--me
-                  .app--avatar(style='background-image: url(images/m-spore.png)')
+                li(class = myMessageClass[1])
+                  .app--avatar(style= sendersImage[1]) 
                     img(src='images/m-spore.png')
                   p.app--message--text
-                    | Great! How about you? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    | #{myMessages[1]}
                   p.app--message--timestamp 2 hours ago
-                li.app--message
-                  .app--avatar(style='background-image: url(images/f-spore.png)')
+                li(class = myMessageClass[2])
+                  .app--avatar(style=sendersImage[2])
                     img(src='images/f-spore.png')
-                  p.app--message--text Fantastic! You wanna grab lunch?
+                  p.app--message--text #{myMessages[2]}
                   p.app--message--timestamp 2 hours ago
-                li.app--message--me
-                  .app--avatar(style='background-image: url(images/m-spore.png)')
+                li(class = myMessageClass[3])
+                  .app--avatar(style=sendersImage[3])
                     img(src='images/m-spore.png')
-                  p.app--message--text Totes mcgotes. How about Mackey's?
+                  p.app--message--text #{myMessages[3]}
                   p.app--message--timestamp 1 hour ago
-                li.app--message
-                  .app--avatar(style='background-image: url(images/f-spore.png)')
+                li(class = myMessageClass[4])
+                  .app--avatar(style=sendersImage[4])
                     img(src='images/f-spore.png')
-                  p.app--message--text Aww yeah.. I'm craving a Triple Quarter Mack!
+                  p.app--message--text #{myMessages[4]}
                   p.app--message--timestamp 1 hour ago
