@@ -65,5 +65,5 @@ console.log('front-end app listening on port 3000!');
 myApp.set("view engine", "pug");
 myApp.set("views", __dirname + "/views"); 
 myApp.get("/",function(req,res){
-  res.render("testindex",myContent);
+  res.render("index",myContent);
 });
